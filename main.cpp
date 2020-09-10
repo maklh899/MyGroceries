@@ -26,5 +26,18 @@ int main()
     }
   }while( input != 'q' && input != 'Q' );
     
+  if (list.empty())
+  {
+    cout<< "there are no items on the list.\n";
+  }
+  else
+  {
+    for(int i=0; i<(unsigned)list.size(); i++)
+    {
+      int x = i+1;
+      cout<<x << ". "<< list[i] << endl;
+    }  
+  }
+  
   return 0;
 }
